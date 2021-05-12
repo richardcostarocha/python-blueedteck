@@ -19,5 +19,5 @@ anoDeNascimento = int(input('quando foi que vc nasceu: '))
 voto = voto(anoDeNascimento)
 print(f'{voto}')
 
+print(f'----------------------------------------------------------------------')
 
-    
