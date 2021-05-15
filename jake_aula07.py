@@ -87,4 +87,41 @@
 
 # notas(a, b, c)
 
-# def gastoViagem(noites,custo_aviao,custo_carro,gastos_extras):
+# Escrever uma aplicação utilizando funções que calcule os gastos com passagem, hospedagem,
+# aluguel de carro e gastos extras de uma viagem para uma determinada cidade.
+
+# def gastoViagem():
+#     noites = int(input('quantas noites vai passar no hotel: '))
+#     def custo_hotel(noites):
+#         custo_hotel = noites*140
+#         return custo_hotel
+#     print('Preço das passagens de avião:')
+#     print('São Paulo custa R$ 312,00')
+#     print('Porto Alegre custa R$ 447,00')
+#     print('Recife custa R$ 831,00')
+#     print('Manaus custa R$ 986,00')
+#     cidade = input('para qual cidade você vai viajar? ').lower().strip()
+#     def custo_aviao(cidade):
+#         if cidade == 'são paulo':
+#             custo_aviao = 312
+#         elif cidade == 'porto alegre':
+#             custo_aviao = 447
+#         elif cidade == 'recife':
+#             custo_aviao = 831
+#         elif cidade == 'manaus':
+#             custo_aviao = 986
+#         return custo_aviao
+#     dias = int(input('por quantos dias vc deseja alugar um carro? '))
+#     def custo_carro(dias):
+#         aluguel_carro = 0
+#         aluguel_carro = aluguel_carro * 40
+#         if dias >= 3 and dias < 7:
+#             aluguel_carro -= 20
+#         elif dias >= 7:
+#             aluguel_carro -= 50
+#         return aluguel_carro
+#     gastos_extras = float(input('quanto dee gastos extras teve na viajem? '))
+#     valor_total = custo_aviao(cidade) + custo_carro(dias) + custo_hotel(noites) + gastos_extras
+#     return valor_total
+
+# print(f'o valor total da viagem é de {gastoViagem()}')
