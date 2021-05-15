@@ -1,7 +1,7 @@
 #01
 
 import os
-from random import vonmisesvariate
+from random import randint
 # senha = 'python'
 # n = 0 
 # while n == 0:
