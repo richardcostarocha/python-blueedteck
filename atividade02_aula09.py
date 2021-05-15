@@ -70,15 +70,9 @@
 
 #desafio01
 
-# centezimo = 0
-# decimo = 0
-# total = 0
+# i = 0
 # for c in range(1000,10000):
-#     centezimoI = c // 100
-#     centezimo = centezimoI*100
-#     decimo = c - centezimo
-#     total = centezimoI + decimo
-#     i = total**2
+#     i = (c // 100 + c % 100)**2
 #     if i == c:
 #         print(i)
 
