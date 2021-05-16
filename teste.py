@@ -1,57 +1,38 @@
+""" Exercício
 
-'''
-a = [[]]
+Crie um programa que leia a idade e o sexo de várias pessoas. 
+A cada pessoa cadastrada, o programa deverá perguntar se o usuário quer ou não continuar. 
+No final, mostre:
+A) quantas pessoas tem mais de 18 anos.
+B) quantos homens foram cadastrados.
+C) quantas mulheres tem menos de 20 anos. """
 
-for l in range(0,3):
-    for c in range(0,3):
-        a[l][c] = int(input(f'digite um valor para [{l},{c}]: '))
-
-print('='*166)
-
-for l in range(0,3):
-    for c in range(0,3):
-        print(f'[{a[l][c]}]', end='')
-    print()
-'''
-
-# n_linhas = int(input('quantas linhas tem a matriz: '))
-# n_colunas = int(input('quantas colunas tem a matriz: '))
-# valor = int(input('qual o valor a ser preenchido: '))
-
-# def crie_matriz(n_linhas, n_colunas, valor):
-#     matriz = [] # lista vazia
-#     for i in range(n_linhas):
-#         # cria a linha i
-#         linha = [] # lista vazia
-#         for j in range(n_colunas):
-#             linha.append(valor)
-
-#         # coloque linha na matriz
-#         matriz.append(linha)
-
-#     return matriz
-# a = crie_matriz(n_linhas, n_colunas, valor)
-# for l in range(n_linhas):
-#     for c in range(n_colunas):
-#         print(f'[{a[l][c]}]', end='')
-#     print()
-
-# for c in range(0,5):
-#     print('ola')
-
-n = 0
-    
-
-
-def breakq():
-    breakq = input('deseja continuar? [sim ou não] ')
-    if breakq == 'sim':
-         n = 0
-    
-    else:
-         n = 1
-    return n
-
-while n == 0:
-   print('ola')
-   breakq()
+esc = 1
+contIdade = 0
+contM = 0
+M20 = 0
+while esc == 1:
+    print('\033[04;37m-=-'*20)
+    sexo = int(input('''Escolha o seu gênero
+    [ 0 ] para FEMININO
+    [ 1 ] para MASCULINO
+    ->:  '''))
+    print('-=-'*20)
+    if sexo == 1:
+        contM+=1
+    idade = int(input('Digite sua idade: '))
+    print('-=-'*20)
+    if idade > 18:
+        contIdade+=1
+    if sexo == 0 and idade < 20:
+        M20+=1
+    fim = int(input('''\033[04;31mDeseja continuar?
+    [ 1 ] para CONTINUAR
+    [ 0 ] para ENCERRAR
+    ->:  '''))
+    esc = fim*esc
+print('\033[04;37m-=-'*20)
+print('''Foram cadastrados {} homens
+{} pessoas com mais de 18 anos
+e {} mulheres com menos de 20 anos.'''.format(contM, contIdade, M20))
+print('-=-'*20)
