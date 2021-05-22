@@ -72,16 +72,16 @@ while True:
         #laços para printar a matriz
         for l in range(n_linhas):
             for c in range(n_colunas):
-                if a[l][c] == 0 or a[l][c] == 2 or a[l][c] == 3 or a[l][c] == 4:
+                if a[l][c] == 0: #or a[l][c] == 2 or a[l][c] == 3 or a[l][c] == 4:
                     print('[ ]', end='')
                 if a[l][c] == 1:
                     print('[A]', end='')
-                # if a[l][c] == 2:
-                #     print('[W]', end='')
-                # if a[l][c] == 3:
-                #     print('[B]', end='')
-                # if a[l][c] == 4:
-                #     print('[O]', end='')
+                if a[l][c] == 2:
+                    print('[W]', end='')
+                if a[l][c] == 3:
+                    print('[B]', end='')
+                if a[l][c] == 4:
+                    print('[O]', end='')
             print()
         if pa[0] != n_linhas-1:
             if a[pa[0]+1][pa[1]] == 2:
