@@ -89,6 +89,8 @@ print('\33[m') """
 #07 - Crie um programa onde o usuário possa digitar sete valores numéricos e cadastre-os em uma lista única que
 #  mantenha separados os valores pares e ímpares. No final, mostre os valores pares e ímpares em ordem crescente.
 
+
+
 #08 - Crie um programa que leia nome, ano de nascimento e carteira de trabalho e cadastre-os (com idade) 
 # em um dicionário. Se por acaso a CTPS for diferente de 0, o dicionário receberá também o ano de contratação 
 # e o salário. Calcule e acrescente , além da idade, com quantos anos a pessoa vai se aposentar.
